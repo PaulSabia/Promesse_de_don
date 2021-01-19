@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Informations personnelles{% endblock %}
+
+{% block content %}
+    <section class="section-info">
+        <h2>{{ info['prenom'] }} {{ info['nom'] }}</h2>
+        <p><span>mail : </span> {{ info['mail'] }}</p>
+        <p><span>telephone : </span> {{ info['telephone'] }}</p>
+        <p><span>Dons totaux :</span><span class="section-info-dons"> {{dons['montant']}} €</span></p>
+    </section>
+{% endblock %}

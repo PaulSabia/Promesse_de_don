@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Faire un don{% endblock %}
+{% block content %}
+    <section class="section-index">
+        <div class="jumbotron bg-cover" style="background-image: url(https://cdn.greenpeace.fr/site/uploads/2021/01/GP04I9N.jpg); box-shadow: -2px 0px 5px -2px black;">
+            <h1><span>En 2021, faisons corps pour la planete</span></h1>
+        </div>
+        <div class="container">
+            <div>
+                <h2>Qui somme-nous ?</h2>
+            </div>
+            <div>
+                <p>
+                    Depuis sa création il y a une cinquantaine d’années, Greenpeace agit sur terre et en mer selon les principes de non-violence pour 
+                    protéger l’environnement et promouvoir la paix. Aujourd’hui, nous restons fidèles à cette mission, ainsi qu'à notre totale 
+                    indépendance financière et idéologique.
+                </p>
+                <p>
+                    Changements climatiques, inégalités grandissantes, injustices sociales, migrations et conflits armés… Tous les <strong>grands défis de 
+                    notre époque</strong> , auxquels nous devons répondre de toute urgence, sont intimement liés – tout comme les structures de pouvoir qui en
+                    sont à l’origine et les mentalités qui s’en accommodent. <strong>C’est pourquoi il est nécessaire de les transformer conjointement</strong>. 
+                </p>
+                <p>
+                    Greenpeace est présente dans <strong>55 pays</strong>, sur tous les continents et tous les océans grâce à ses 28 bureaux nationaux et régionaux et 
+                    ses trois bateaux. Elle compte plus de <strong>trois millions d'adhérent·es</strong> et plus de <strong>36 000 bénévoles</strong> à travers le monde. Nous plaçons 
+                    le pouvoir citoyen au cœur de nos campagnes en donnant une résonance au travail de toutes celles et tous ceux qui partagent notre 
+                    vision, nos espoirs et notre conviction qu’il faut des <strong>transformations profondes de nos sociétés</strong>.
+                </p>
+                <div class="bouton-don"><a href="{{ url_for('form')}}">Faire un don</a></div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Nos donnateurs{% endblock %}
+
+{% block content %}
+    <h2 class="h2-historique">Merci ! Grâce à vous nous avons récolté <span> {{ somme['montant'] }} €</span></h2>
+
+    {% for donnateur in donnateurs %}
+
+    <a href="{{ url_for('admin', prenom=donnateur['prenom'], nom=donnateur['nom']) }}" class="cellule-don">
+        <h2>{{ donnateur['prenom'] }} {{ donnateur['nom'] }}</h2>
+        <span class="badge badge-primary">Montant : {{ donnateur['montant'] }}</span>
+        <span class="badge badge-warning">{{ donnateur['date'] }}</span>
+    </a>
+
+    {% endfor %}
+{% endblock %}
